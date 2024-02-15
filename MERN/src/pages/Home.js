@@ -70,7 +70,10 @@ function Home (){
 
             {error && <div className="error">{error}</div>}
 
-            </form>   */}
+            </form>   */} 
+            <h3 className="upper">Eat GYM</h3>
+            <h3 className="middle">Sleep GYM</h3>
+            <h3 className="bottom">Dream GYM</h3>
 
             <WorkoutForm/>
 

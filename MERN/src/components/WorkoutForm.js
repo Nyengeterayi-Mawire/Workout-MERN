@@ -41,9 +41,12 @@ function WorkoutForm(){
         
 
     return(
-        <form onSubmit={createWorkout}>
+        <form onSubmit={createWorkout}> 
+            {/* <label>Workout : </label><br/> */}
             <input type="text" placeholder="Workout Type" onChange={(e)=>{setTitle(e.target.value)}} className={emptyFields.includes('title') ? 'error' : ''} value={title}/>
+            {/* <label>Reps : </label><br/> */}
             <input type="number" placeholder="Number of Reps" onChange={(e)=>{setReps(e.target.value)}} className={emptyFields.includes('reps') ? 'error' : ''} value={reps}></input>
+            {/* <label>Sets : </label><br/> */}
             <input type="number" placeholder="Number of Sets" onChange={(e)=>{setLoad(e.target.value)}} className={emptyFields.includes('load') ? 'error' : ''} value={load}></input> 
             <button>Submit</button> 
 

@@ -16,7 +16,7 @@ const WorkoutDetails = ({workout}) => {
         }
     }
     return(
-        <div >
+        <div className='workoutDetailComp'>
             <h3>{workout.title}</h3>
             <p>Reps : {workout.reps}</p>
             <p>Sets : {workout.load}</p> 
